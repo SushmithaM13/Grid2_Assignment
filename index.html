@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,200px);
+            gap: 10px 20px;
+            grid-template-areas: 
+            "re re pi"
+            "bu br pi"
+            ;
+            background-color: #a786bd;
+            padding: 30px;
+        }
+        .container > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .child1{
+            background-color: #f9431e;
+            grid-area: re;
+        }
+        .child2{
+            background-color: palegreen;
+            grid-area: pa;
+        }
+        .child3{
+            background-color: #fac8cb;
+            grid-area: pi;
+        }
+        .child4{
+            background-color: #010dff;
+            grid-area: bu;
+        }
+        .child5{
+            background-color: #a03d2d;
+            grid-area: br;
+        }
+        .child6{
+            background-color: orange;
+            grid-area: or;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1">4</div>
+        <div class="child2">3</div>
+        <div class="child3">6</div>
+        <div class="child4">1</div>
+        <div class="child5">5</div>
+        <div class="child6">2</div>
+    </div>
+</body>
+</html>
